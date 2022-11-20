@@ -1,0 +1,250 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEPLOSNABZHENIE</title>
+    <link rel="stylesheet" href="/CSS/main.css" />
+  </head>
+  <body>
+    <header class="header js-header">
+      <div class="container">
+        <div class="hamb">
+          <div class="hamb_field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <div class="popup"></div>
+        <div class="nav">
+          <div class="nav_left">
+            <div class="nav_logo">
+              <a href="main-page.html">
+                <img class="nav_logo_img" src="" alt="Логотип" />
+              </a>
+            </div>
+          </div>
+          <div class="nav_right">
+            <div>
+              <ul class="nav_links">
+                <li>
+                  <a class="nav_link_a nav_link-active" href="#">
+                    <div class="nav_link">ГЛАВНАЯ</div>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav_link_a" href="#">
+                    <div class="nav_link">УСЛУГИ</div>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav_link_a" href="#">
+                    <div class="nav_link">КОНТАКТЫ</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <script src="/JS/main-page.js"></script>
+  </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  /* overflow-x: hidden; */
+  color: #000000;
+}
+
+body {
+}
+
+.wrapper {
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  /* z-index: 1000; */
+}
+
+::-webkit-scrollbar-track {
+  background: #d4d4d4;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 8px;
+  border: 3px solid #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c;
+}
+
+.container {
+  max-width: 1530px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  /* height: 100px; */
+  background-color: #e29f9f;
+  padding: 20px 0;
+  /* position: sticky;
+  top: 0; */
+  top: -100px;
+  left: 0;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+.header.fixed {
+  position: fixed;
+  transform: translateY(100px);
+}
+
+/* NAV */
+.nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 0; */
+}
+
+.nav_left {
+  max-width: 20%;
+}
+
+.nav_logo {
+}
+
+.nav_right {
+  float: right;
+  /* width: 80%; */
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_link_a {
+  transition: color 0.3s;
+}
+
+.nav_link {
+  color: #000000;
+  margin: 20px 20px;
+}
+
+.nav_link_a:hover .nav_link {
+  color: #eac701;
+  text-decoration: underline;
+}
+
+.nav_link-active {
+  font-weight: 900;
+}
+
+@media (max-width: 1000px) {
+  .nav_right {
+    display: none;
+  }
+
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamb_field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+}
+
+/* MAIN */
+main {
+  height: 10000px;
+}
