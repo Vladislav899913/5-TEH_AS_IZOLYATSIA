@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TEPLOSNABZHENIE</title>
-    <link rel="stylesheet" href="CSS/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/main.css" />
   </head>
   <body>
     <header class="header js-header">
@@ -25,8 +30,15 @@
                 <span class="bar"></span>
               </div>
             </div>
-            <a class="nav_logo" id="nav_logo" href="index.html">
-              <img class="nav_logo_img" src="" alt="ЛОГОТИП" />
+            <a class="nav_logo" id="nav_logo" href="#intro">
+              <div class="nav_logo_block">
+                <img
+                  class="nav_logo_img"
+                  src="images/main_logo.png"
+                  alt="ЛОГОТИП"
+                />
+              </div>
+              <div class="nav_logo_title">ТЕХ-АС «ИЗОЛЯЦИЯ»</div>
             </a>
             <ul class="nav_links" id="nav_links">
               <li>
@@ -51,7 +63,7 @@
       <div class="popup" id="popup"></div>
     </header>
     <main>
-      <div class="intro">
+      <div class="intro" id="intro">
         <div class="container">
           <div class="intro_title">
             <h1>
@@ -81,8 +93,8 @@
                 />
               </div>
               <div class="intro_item_title">
-                <b>Качественные материалы</b>, а также современное оборудование
-                и технологии
+                <b>Качественные материалы</b>, современное оборудование и
+                технологии
               </div>
             </div>
             <div class="intro_item">
@@ -94,11 +106,11 @@
                 />
               </div>
               <div class="intro_item_title">
-                <b>Оптимальное соотношение</b> цена/качество
+                <b>Оптимальное соотношение</b> цены и качества
               </div>
             </div>
           </div>
-          <div class="intro_clients">
+          <!-- <div class="intro_clients">
             <div class="intro_clients_line"></div>
             <h3 class="intro_clients_title">Наши объекты и партнёры</h3>
             <div class="intro_clients_line"></div>
@@ -132,10 +144,220 @@
                 alt=""
               />
             </div>
+          </div> -->
+          <a href="#about">
+            <button class="intro_btn">Подробнее</button>
+          </a>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <div class="container">
+          <div class="about_title">
+            <h1>О нас</h1>
+          </div>
+          <div class="about_text">
+            <p>
+              Наша компания была основана в 2015 году, но её руководитель начал
+              свою трудовую деятельность ещё в 2003 году в ЗАО
+              «Белтермоизоляция». Затем работал в нескольких компаниях г. Москвы
+              («АС-СТРОЙ» - производитель работ, «ТЕХ-АЛЬТЕРНАТИВА» -
+              руководитель проекта, «Антей-Инжиниринг» - технический директор).
+              Опыт, накопленный при работе с крупными иностранными и российскими
+              компаниями, привел к организации ООО «ТЕХ-АС ИЗОЛЯЦИЯ».
+              Сформировавшаяся еще несколько лет назад команда
+              высококвалифицированных сотрудников нашей компании выполнит работы
+              качественно и точно в сроки.
+            </p>
           </div>
         </div>
       </div>
-      <div class="qwe"></div>
+      <div class="activity">
+        <div class="container">
+          <div class="activity_title">
+            Основные направления нашей деятельности
+          </div>
+          <div class="activity_table">
+            <div class="activity_table_left">
+              <div class="activity_table_left_item">
+                <div class="activity_table_left_title">
+                  <h3>
+                    Устройство внутренних, наружных инженерных систем и
+                    оборудования зданий и сооружений
+                  </h3>
+                </div>
+                <div class="activity_table_left_items">
+                  <ul>
+                    <li>систем теплоснабжения</li>
+                    <li>систем электроснабжения</li>
+                    <li>системы вентиляции и кондиционирования воздуха</li>
+                    <li>система хладоснобжения</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="activity_table_left_item">
+                <div class="activity_table_right_title">
+                  <h3>
+                    Защита строительных конструкций, трубопроводов и
+                    оборудования
+                  </h3>
+                </div>
+                <div class="activity_table_right_items">
+                  <ul>
+                    <li>устройство оклеечной изоляции</li>
+                    <li>устройство металлизационных покрытий</li>
+                    <li>защитное покрытие лакокрасочными материалами</li>
+                    <li>работы по теплоизоляции трубопроводов</li>
+                    <li>
+                      работы по теплоизоляции зданий, строительных конструкций и
+                      оборудования
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="activity_table_right">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/activity_1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/activity_2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/activity_3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/activity_4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/activity_5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/activity_6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/activity_7.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="activity_photos">
+            <div class="activity_photos_icon">
+              <img
+                class="activity_photos_icon_img"
+                src="/images/activity_1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="activity_photos_icon">
+              <img
+                class="activity_photos_icon_img"
+                src="/images/activity_2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="activity_photos_icon">
+              <img
+                class="activity_photos_icon_img"
+                src="/images/activity_3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="activity_photos_icon">
+              <img
+                class="activity_photos_icon_img"
+                src="/images/activity_4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="activity_photos_icon">
+              <img
+                class="activity_photos_icon_img"
+                src="/images/activity_5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="activity_photos_icon">
+              <img
+                class="activity_photos_icon_img"
+                src="/images/activity_6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="activity_photos_icon">
+              <img
+                class="activity_photos_icon_img"
+                src="/images/activity_7.jpg"
+                alt=""
+              />
+            </div>
+          </div> -->
+
+          <!-- <div class="all">
+            <input checked type="radio" name="respond" id="desktop" />
+            <article id="slider">
+              <input checked type="radio" name="slider" id="switch1" />
+              <input type="radio" name="slider" id="switch2" />
+              <input type="radio" name="slider" id="switch3" />
+              <input type="radio" name="slider" id="switch4" />
+              <input type="radio" name="slider" id="switch5" />
+              <input type="radio" name="slider" id="switch6" />
+              <input type="radio" name="slider" id="switch7" />
+              <div id="slides">
+                <div id="overflow">
+                  <div class="image">
+                    <article>
+                      <img src="/images/activity_1.jpg" alt="" />
+                    </article>
+                    <article>
+                      <img src="/images/activity_2.jpg" alt="" />
+                    </article>
+                    <article>
+                      <img src="/images/activity_3.jpg" alt="" />
+                    </article>
+                    <article>
+                      <img src="/images/activity_4.jpg" alt="" />
+                    </article>
+                    <article>
+                      <img src="/images/activity_5.jpg" alt="" />
+                    </article>
+                    <article>
+                      <img src="/images/activity_6.jpg" alt="" />
+                    </article>
+                    <article>
+                      <img src="/images/activity_7.jpg" alt="" />
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div id="controls">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+                <label for="switch6"></label>
+                <label for="switch7"></label>
+              </div>
+
+              <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+                <label for="switch6"></label>
+                <label for="switch7"></label>
+              </div>
+            </article>
+          </div> -->
+        </div>
+      </div>
     </main>
     <script src="JS/main.js"></script>
   </body>

@@ -30,3 +30,29 @@ function renderPopup() {
   popup.appendChild(nav_links);
   console.log(nav_links);
 }
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (event) {
+    event.preventDefault();
+    const blockID = anchor.getAttribute("href");
+    document.querySelector("" + blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+
+let swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
