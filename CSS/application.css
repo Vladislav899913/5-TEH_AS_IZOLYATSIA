@@ -1,0 +1,43 @@
+.application_intro_form {
+  max-width: 500px;
+  height: 500px;
+  border: 3px solid black;
+  margin: 0 auto;
+}
+
+.application_intro_form_line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.application_intro_form_line > input {
+  width: 48%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 3px solid rgb(146, 146, 146);
+  padding-left: 10px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.application_intro_form > input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 3px solid rgb(146, 146, 146);
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.application_intro_form_textarea {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+  resize: none;
+  border: 3px solid rgb(146, 146, 146);
+}
+
+.application_intro_form_btn {
+  cursor: pointer;
+}

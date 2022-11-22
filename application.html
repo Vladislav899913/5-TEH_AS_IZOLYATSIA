@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEPLOSNABZHENIE</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/application.css" />
+  </head>
+  <body>
+    <header class="header js-header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar_wrap">
+            <div class="hamb" id="hamb">
+              <div class="hamb_field" id="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <a class="nav_logo" id="nav_logo" href="index.html">
+              <div class="nav_logo_block">
+                <img
+                  class="nav_logo_img"
+                  src="images/main_logo.png"
+                  alt="ЛОГОТИП"
+                />
+              </div>
+              <div class="nav_logo_title">ТЕХ-АС «ИЗОЛЯЦИЯ»</div>
+            </a>
+            <ul class="nav_links" id="nav_links">
+              <li>
+                <a class="nav_link_a" href="index.html">
+                  <div class="nav_link">Главная</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav_link_a" href="services.html">
+                  <div class="nav_link">Услуги</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav_link_a nav_link-active" href="application.html">
+                  <div class="nav_link">Оставить заявку</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    </header>
+    <main>
+      <div class="intro">
+        <div class="container">
+          <div class="intro_title">
+            <h1>Оставьте заявку</h1>
+          </div>
+          <form action="#" method="POST" class="application_intro_form">
+            <div class="application_intro_form_line">
+              <input
+                type="text"
+                placeholder="Фамилия*"
+                maxlength="30"
+                name="surname"
+                id=""
+                class="_req"
+              />
+              <input
+                type="text"
+                placeholder="Имя*"
+                maxlength="30"
+                name="name"
+                id=""
+                class="_req"
+              />
+            </div>
+
+            <input
+              type="text"
+              placeholder="Отчество*"
+              maxlength="30"
+              name="patronymic"
+              id=""
+            />
+            <div class="application_intro_form_line">
+              <input
+                type="email"
+                placeholder="Email*"
+                name="email"
+                id=""
+                class="_req _email"
+              />
+              <input
+                type="number"
+                placeholder="Телефон*"
+                name="phone"
+                id=""
+                class="_req"
+              />
+            </div>
+            <textarea
+              name="text"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Текст сообщения..."
+              maxlength="500"
+              class="application_intro_form_textarea"
+            ></textarea>
+            <div class="application_intro_form_line">
+              <input
+                type="submit"
+                class="application_intro_form_btn"
+                value="Отправить"
+                onclick="formAlert()"
+              />
+              <input
+                type="reset"
+                class="application_intro_form_btn"
+                value="Сбросить"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
