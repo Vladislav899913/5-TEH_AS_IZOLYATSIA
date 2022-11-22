@@ -190,7 +190,7 @@ body {
       rgba(226, 120, 8, 0.8),
       rgba(53, 76, 92, 0.7)
     ),
-    url(/images/main_bg.jpg) 0 0 no-repeat;
+    url(images/main_bg.jpg) 0 0 no-repeat;
   /* background-blend-mode: screen; */
   background-size: cover;
 }
