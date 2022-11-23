@@ -8,7 +8,7 @@ function hambHandler(e) {
   e.preventDefault();
   popup.classList.toggle("open");
   hamb.classList.toggle("active");
-  body.classList.toggle("noscroll");
+  // body.classList.toggle("noscroll");
   renderPopup();
 }
 
