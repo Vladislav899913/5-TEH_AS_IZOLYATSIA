@@ -568,8 +568,12 @@ dot:hover {
 
 @media (max-width: 1024px) {
   /* INTRO */
+  .intro {
+    padding: 100px 0;
+  }
+
   .intro_title {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .intro_item_title {
@@ -709,11 +713,6 @@ dot:hover {
 }
 
 @media (max-width: 768px) {
-  /* INTRO */
-  .intro {
-    padding: 100px 0;
-  }
-
   .intro_title {
     font-size: 33px;
     margin-bottom: 75px;
@@ -798,11 +797,6 @@ dot:hover {
   }
 
   /* INTRO */
-  .intro {
-    padding: 100px 0;
-    height: auto;
-  }
-
   .intro_title {
     font-size: 25px;
     margin-bottom: 50px;

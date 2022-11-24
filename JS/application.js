@@ -13,19 +13,19 @@ document.addEventListener("DOMContentLoaded", function Form() {
 
     if (error === 0) {
       applicationBody.classList.add("_sending");
-      let response = await fetch("sendmail.php", {
-        method: "POST",
-        body: formData,
-      });
-      if (response.ok) {
-        let result = await response.json();
-        alert(result.message);
-        form.reset();
-        applicationBody.classList.remove("_sending");
-      } else {
-        alert("Произошла ошибка при отправке заявки. Попробуйте снова.");
-        applicationBody.classList.remove("_sending");
-      }
+      // let response = await fetch("sendmail.php", {
+      //   method: "POST",
+      //   body: formData,
+      // });
+      // if (response.ok) {
+      //   let result = await response.json();
+      //   alert(result.message);
+      //   form.reset();
+      //   applicationBody.classList.remove("_sending");
+      // } else {
+      //   alert("Произошла ошибка при отправке заявки. Попробуйте снова.");
+      //   applicationBody.classList.remove("_sending");
+      // }
     } else {
       alert("Проверьте введённые поля!");
     }

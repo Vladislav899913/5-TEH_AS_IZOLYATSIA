@@ -59,7 +59,7 @@
 .form_label {
   font-size: 18px;
   display: block;
-  margin: 0 0 10px 0;
+  /* margin: 0; */
 }
 
 .form_input {
@@ -164,4 +164,13 @@ textarea.form_input {
 .form_button:active {
   top: 3px;
   box-shadow: 0 2px 0 #161b13;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 425px) {
 }
