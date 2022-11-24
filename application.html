@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/application.css" />
   </head>
-  <body>
+  <body class="application_body" id="application_body">
     <header class="header js-header">
       <nav class="navbar">
         <div class="container">
@@ -24,7 +24,7 @@
                 <span class="bar"></span>
               </div>
             </div>
-            <a class="nav_logo" id="nav_logo" href="#intro">
+            <a class="nav_logo" id="nav_logo" href="index.html">
               <div class="nav_logo_block">
                 <img
                   class="nav_logo_img"
@@ -59,75 +59,77 @@
     <main>
       <div class="intro">
         <div class="container">
-          <div class="intro_title">
+          <div class="intro_title application-title">
             <h1>Оставьте заявку</h1>
+            <div class="title_line"></div>
           </div>
-          <form action="#" method="POST" class="application_intro_form">
-            <div class="application_intro_form_line">
-              <input
-                type="text"
-                placeholder="Фамилия*"
-                maxlength="30"
-                name="surname"
-                id=""
-                class="_req"
-              />
-              <input
-                type="text"
-                placeholder="Имя*"
-                maxlength="30"
-                name="name"
-                id=""
-                class="_req"
-              />
-            </div>
-
-            <input
-              type="text"
-              placeholder="Отчество*"
-              maxlength="30"
-              name="patronymic"
-              id=""
-            />
-            <div class="application_intro_form_line">
-              <input
-                type="email"
-                placeholder="Email*"
-                name="email"
-                id=""
-                class="_req _email"
-              />
-              <input
-                type="number"
-                placeholder="Телефон*"
-                name="phone"
-                id=""
-                class="_req"
-              />
-            </div>
-            <textarea
-              name="text"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Текст сообщения..."
-              maxlength="500"
-              class="application_intro_form_textarea"
-            ></textarea>
-            <div class="application_intro_form_line">
-              <input
-                type="submit"
-                class="application_intro_form_btn"
-                value="Отправить"
-                onclick="formAlert()"
-              />
-              <input
-                type="reset"
-                class="application_intro_form_btn"
-                value="Сбросить"
-              />
-            </div>
-          </form>
+          <div class="form">
+            <form action="#" id="form" class="form_body">
+              <div class="form_item">
+                <label for="formFIO" class="form_label">ФИО*</label>
+                <input
+                  id="formFIO"
+                  type="text"
+                  name="FIO"
+                  maxlength="60"
+                  class="form_input _req"
+                  placeholder="Иванов Иван Иванович"
+                />
+              </div>
+              <div class="form_item">
+                <label for="formPhone" class="form_label">Телефон*</label>
+                <input
+                  id="formPhone"
+                  type="text"
+                  name="phone"
+                  maxlength="12"
+                  class="form_input _req _phone"
+                  placeholder="+70000000000"
+                />
+              </div>
+              <div class="form_item">
+                <label for="formEmail" class="form_label">E-mail*</label>
+                <input
+                  id="formEmail"
+                  type="text"
+                  name="email"
+                  maxlength="30"
+                  class="form_input _req _email"
+                  placeholder="Адрес электронной почты"
+                />
+              </div>
+              <div class="form_item">
+                <label for="formMessage" class="form_label">Сообщение:</label>
+                <textarea
+                  name="message"
+                  id="formMessage"
+                  maxlength="1000"
+                  class="form_input"
+                  placeholder="Введите сообщение..."
+                ></textarea>
+              </div>
+              <div class="form_item">
+                <div class="checkbox">
+                  <input
+                    id="formAgreement"
+                    checked
+                    type="checkbox"
+                    name="agreement"
+                    class="checkbox_input _req"
+                  />
+                  <label for="formAgreement" class="checkbox_label">
+                    <span
+                      >Я даю своё согласие на обработку персональных данных в
+                      соответствии с <a href="">Условиями</a>*</span
+                    >
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="form_button" onclick="Form()">
+                Отправить
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -156,6 +158,7 @@
         </div>
       </div>
     </footer>
-    <script src="JS/main.js"></script>
+    <script src="JS/common.js"></script>
+    <script src="JS/application.js"></script>
   </body>
 </html>

@@ -11,44 +11,34 @@ $mail->setLanguage("ru", "phpmailer/language/");
 $mail->IsHTML(true);
 
 $mail->setFrom("Vladislav899913@gmail.com", "Владислав Громийчук");
-$mail->addAddress("dashaboizova@mail.ru");
-$mail->Subject = "Привет! Это Владислав Громийчук";
+$mail->addAddress("Vladislav899913@gmail.com");
+$mail->Subject = "ТЕХ-АС «ИЗОЛЯЦИЯ»";
 
 $body = "<h1>Новое письмо!</h1>";
 
-if (trim(!empty($POST["surname"]))) {
-    $body.="<p><strong>Фамилия:</strong> ".$POST["surname"]."</p>";
+if (trim(!empty($_POST["FIO"]))) {
+    $body.="<p><strong>ФИО:</strong> ".$_POST["FIO"]."</p>";
 }
-if (trim(!empty($POST["name"]))) {
-    $body.="<p><strong>Имя:</strong> ".$POST["name"]."</p>";
+if (trim(!empty($_POST["phone"]))) {
+    $body.="<p><strong>Телефон:</strong> ".$_POST["phone"]."</p>";
 }
-if (trim(!empty($POST["patronymic"]))) {
-    $body.="<p><strong>Отчество:</strong> ".$POST["patronymic"]."</p>";
+if (trim(!empty($_POST["email"]))) {
+    $body.="<p><strong>E-mail:</strong> ".$_POST["email"]."</p>";
 }
-if (trim(!empty($POST["email"]))) {
-    $body.="<p><strong>E-mail:</strong> ".$POST["email"]."</p>";
-}
-if (trim(!empty($POST["phone"]))) {
-    $body.="<p><strong>Телефон:</strong> ".$POST["phone"]."</p>";
+if (trim(!empty($_POST["message"]))) {
+    $body.="<p><strong>Сообщение:</strong> ".$_POST["message"]."</p>";
 }
 
 $mail->Body = $body;
 
 if(!$mail->send()) {
-    $message = "Ошибка!";
+    $message = "Произошла ошибка при отправке заявки. Попробуйте снова.";
 } else {
-    $message = "Данные отправлены!";
+    $message = "Заявка отправлена!";
 }
 
 $response = ["message" => $message];
 
 header("Content-type: application/json");
 echo json_encode($response);
-
-// $surname = $_POST["surname"];
-// $name = $_POST["name"];
-// $patronymic = $_POST["patronymic"];
-// $email = $_POST["email"];
-// $phone = $_POST["phone"];
-// $text = $_POST["text"];
 ?>
