@@ -10,8 +10,8 @@ $mail->CharSet = "UTF-8";
 $mail->setLanguage("ru", "phpmailer/language/");
 $mail->IsHTML(true);
 
-$mail->setFrom("Vladislav899913@gmail.com", "Владислав Громийчук");
-$mail->addAddress("Vladislav899913@gmail.com");
+$mail->setFrom("azarov.nickita2017@yandex.ru", "Никита Азаров");
+$mail->addAddress("azarov.nickita2017@yandex.ru");
 $mail->Subject = "ТЕХ-АС «ИЗОЛЯЦИЯ»";
 
 $body = "<h1>Новое письмо!</h1>";

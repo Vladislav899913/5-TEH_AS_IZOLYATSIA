@@ -182,7 +182,7 @@ body {
 /* MAIN */
 /* INTRO */
 .intro {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   padding-top: 150px;
   /* background: linear-gradient(to bottom, #e27808, #354c5c), */
