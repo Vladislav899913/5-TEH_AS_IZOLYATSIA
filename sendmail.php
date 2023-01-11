@@ -10,11 +10,11 @@ $mail->CharSet = "UTF-8";
 $mail->setLanguage("ru", "phpmailer/language/");
 $mail->IsHTML(true);
 
-$mail->setFrom("azarov.nickita2017@yandex.ru", "Никита Азаров");
-$mail->addAddress("azarov.nickita2017@yandex.ru");
+$mail->setFrom("Vladislav899913@gmail.com", "Владислав Громийчук");
+$mail->addAddress("Vladislav899913@gmail.com");
 $mail->Subject = "ТЕХ-АС «ИЗОЛЯЦИЯ»";
 
-$body = "<h1>Новое письмо!</h1>";
+$body = "<h1>Новая заявка!</h1>";
 
 if (trim(!empty($_POST["FIO"]))) {
     $body.="<p><strong>ФИО:</strong> ".$_POST["FIO"]."</p>";
@@ -25,8 +25,9 @@ if (trim(!empty($_POST["phone"]))) {
 if (trim(!empty($_POST["email"]))) {
     $body.="<p><strong>E-mail:</strong> ".$_POST["email"]."</p>";
 }
-if (trim(!empty($_POST["message"]))) {
-    $body.="<p><strong>Сообщение:</strong> ".$_POST["message"]."</p>";
+$body.="<p><strong>Должность:</strong> ".$_POST["vacancy"]."</p>";
+if (trim(!empty($_POST["comment"]))) {
+    $body.="<p><strong>Сообщение:</strong> ".$_POST["comment"]."</p>";
 }
 
 $mail->Body = $body;

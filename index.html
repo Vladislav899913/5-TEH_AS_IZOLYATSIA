@@ -1,376 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEPLOSNABZHENIE</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ООО "ТАИ"</title>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/main.css" />
-  </head>
-  <body>
-    <header class="header js-header">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar_wrap">
-            <div class="hamb" id="hamb">
-              <div class="hamb_field" id="hamb">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="CSS/main.css" />
+    </head>
+    <body>
+        <header class="header js-header">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar_wrap">
+                        <div class="hamb" id="hamb">
+                            <div class="hamb_field" id="hamb">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <a class="nav_logo" id="nav_logo" href="#intro">
+                            <div class="nav_logo_block">
+                                <img
+                                    class="nav_logo_img"
+                                    src="images/index/main_logo.png"
+                                    alt="ЛОГОТИП"
+                                />
+                            </div>
+                            <div class="nav_logo_title">ТЕХ-АС «ИЗОЛЯЦИЯ»</div>
+                        </a>
+                        <ul class="nav_links" id="nav_links">
+                            <li>
+                                <a
+                                    class="nav_link_a nav_link-active"
+                                    href="index.html"
+                                >
+                                    <div class="nav_link">Главная</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav_link_a" href="services.html">
+                                    <div class="nav_link">Услуги</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav_link_a" href="application.html">
+                                    <div class="nav_link">Оставить заявку</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="popup" id="popup"></div>
+        </header>
+        <main>
+            <div class="intro" id="intro">
+                <div class="container">
+                    <div class="intro_inner">
+                        <div class="intro_title">
+                            <h1>
+                                Устройство внутренних и наружных инженерных
+                                систем зданий и сооружений
+                            </h1>
+                        </div>
+                        <div class="intro_items">
+                            <div class="intro_item">
+                                <div class="intro_item_logo">
+                                    <img
+                                        class="intro_item_logo_img"
+                                        src="images/index/main_person.png"
+                                        alt="Картинка работника"
+                                    />
+                                </div>
+                                <div class="intro_item_title">
+                                    <b>Квалифицированный персонал</b> с большим
+                                    опытом работы
+                                </div>
+                            </div>
+                            <div class="intro_item">
+                                <div class="intro_item_logo">
+                                    <img
+                                        class="intro_item_logo_img"
+                                        src="images/index/main_pipes.png"
+                                        alt="Картинка материалов"
+                                    />
+                                </div>
+                                <div class="intro_item_title">
+                                    <b>Качественные материалы</b>, современное
+                                    оборудование и технологии
+                                </div>
+                            </div>
+                            <div class="intro_item">
+                                <div class="intro_item_logo">
+                                    <img
+                                        class="intro_item_logo_img"
+                                        src="images/index/main_quality.png"
+                                        alt="Картикна качества"
+                                    />
+                                </div>
+                                <div class="intro_item_title">
+                                    <b>Оптимальное соотношение</b> цены и
+                                    качества
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#about">
+                            <button class="intro_btn">Подробнее</button>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <a class="nav_logo" id="nav_logo" href="#intro">
-              <div class="nav_logo_block">
-                <img
-                  class="nav_logo_img"
-                  src="images/index/main_logo.png"
-                  alt="ЛОГОТИП"
-                />
-              </div>
-              <div class="nav_logo_title">ТЕХ-АС «ИЗОЛЯЦИЯ»</div>
-            </a>
-            <ul class="nav_links" id="nav_links">
-              <li>
-                <a class="nav_link_a nav_link-active" href="index.html">
-                  <div class="nav_link">Главная</div>
-                </a>
-              </li>
-              <li>
-                <a class="nav_link_a" href="services.html">
-                  <div class="nav_link">Услуги</div>
-                </a>
-              </li>
-              <li>
-                <a class="nav_link_a" href="application.html">
-                  <div class="nav_link">Оставить заявку</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="popup" id="popup"></div>
-    </header>
-    <main>
-      <div class="intro" id="intro">
-        <div class="container">
-          <div class="intro_inner">
-            <div class="intro_title">
-              <h1>
-                Устройство внутренних и наружных инженерных систем зданий и
-                сооружений
-              </h1>
+            <div class="about" id="about">
+                <div class="container">
+                    <div class="about_title title">
+                        <h1>О нас</h1>
+                        <div class="title_line"></div>
+                    </div>
+                    <div class="about_text">
+                        <p>
+                            Наша компания была основана в 2015 году, но её
+                            руководитель начал свою трудовую деятельность ещё в
+                            2003 году в ЗАО «Белтермоизоляция». Затем работал в
+                            нескольких компаниях г. Москвы («АС-СТРОЙ» -
+                            производитель работ, «ТЕХ-АЛЬТЕРНАТИВА» -
+                            руководитель проекта, «Антей-Инжиниринг» -
+                            технический директор). Опыт, накопленный при работе
+                            с крупными иностранными и российскими компаниями,
+                            привел к организации ООО «ТЕХ-АС ИЗОЛЯЦИЯ».
+                            Сформировавшаяся ещё несколько лет назад команда
+                            специалистов нашей компании выполнит работы
+                            качественно и точно в сроки.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="intro_items">
-              <div class="intro_item">
-                <div class="intro_item_logo">
-                  <img
-                    class="intro_item_logo_img"
-                    src="images/index/main_person.png"
-                    alt="Картинка работника"
-                  />
+            <div class="activity">
+                <div class="container">
+                    <div class="activity_title title">
+                        <h2>Основные направления нашей деятельности</h2>
+                        <div class="title_line"></div>
+                    </div>
+                    <div class="activity_table">
+                        <div class="activity_table_left">
+                            <div class="activity_table_left_item">
+                                <div class="activity_table_left_title">
+                                    <h3>
+                                        Устройство внутренних, наружных
+                                        инженерных систем и оборудования зданий
+                                        и сооружений
+                                    </h3>
+                                </div>
+                                <div class="activity_table_left_items">
+                                    <ul>
+                                        <li>Систем теплоснабжения</li>
+                                        <li>Систем электроснабжения</li>
+                                        <li>
+                                            Системы вентиляции и
+                                            кондиционирования воздуха
+                                        </li>
+                                        <li>Система хладоснобжения</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="activity_table_left_item">
+                                <div class="activity_table_left_title">
+                                    <h3>
+                                        Защита строительных конструкций,
+                                        трубопроводов и оборудования
+                                    </h3>
+                                </div>
+                                <div class="activity_table_left_items">
+                                    <ul>
+                                        <li>Устройство оклеечной изоляции</li>
+                                        <li>
+                                            Устройство металлизационных покрытий
+                                        </li>
+                                        <li>
+                                            Защитное покрытие лакокрасочными
+                                            материалами
+                                        </li>
+                                        <li>
+                                            Работы по теплоизоляции
+                                            трубопроводов, конструкций
+                                        </li>
+                                        <li>
+                                            Работы по теплоизоляции зданий,
+                                            оборудования
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity_table_right">
+                            <div class="slideshow-container">
+                                <div class="mySlides fade">
+                                    <img
+                                        class="mySlides_img"
+                                        src="images/index/activity_1.jpg"
+                                        alt="Картинка_1"
+                                    />
+                                </div>
+                                <div class="mySlides fade">
+                                    <img
+                                        class="mySlides_img"
+                                        src="images/index/activity_2.jpg"
+                                        alt="Картинка_2"
+                                    />
+                                </div>
+                                <div class="mySlides fade">
+                                    <img
+                                        class="mySlides_img"
+                                        src="images/index/activity_3.jpg"
+                                        alt="Картинка_3"
+                                    />
+                                </div>
+                                <div class="mySlides fade">
+                                    <img
+                                        class="mySlides_img"
+                                        src="images/index/activity_4.jpg"
+                                        alt="Картинка_4"
+                                    />
+                                </div>
+                                <div class="mySlides fade">
+                                    <img
+                                        class="mySlides_img"
+                                        src="images/index/activity_5.jpg"
+                                        alt="Картинка_5"
+                                    />
+                                </div>
+                                <div class="mySlides fade">
+                                    <img
+                                        class="mySlides_img"
+                                        src="images/index/activity_6.jpg"
+                                        alt="Картинка_6"
+                                    />
+                                </div>
+                                <a class="prev" onclick="plusSlides(-1)">
+                                    <img
+                                        class="prev_img"
+                                        src="images/index/prev.png"
+                                        alt="Слайдер влево"
+                                    />
+                                </a>
+                                <a class="next" onclick="plusSlides(1)">
+                                    <img
+                                        class="prev_img"
+                                        src="images/index/next.png"
+                                        alt="Слайдер вправо"
+                                    />
+                                </a>
+                            </div>
+                            <div>
+                                <div class="dot_bg">
+                                    <span
+                                        class="dot"
+                                        onclick="currentSlide(1)"
+                                    ></span>
+                                    <span
+                                        class="dot"
+                                        onclick="currentSlide(2)"
+                                    ></span>
+                                    <span
+                                        class="dot"
+                                        onclick="currentSlide(3)"
+                                    ></span>
+                                    <span
+                                        class="dot"
+                                        onclick="currentSlide(4)"
+                                    ></span>
+                                    <span
+                                        class="dot"
+                                        onclick="currentSlide(5)"
+                                    ></span>
+                                    <span
+                                        class="dot"
+                                        onclick="currentSlide(6)"
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="intro_item_title">
-                  <b>Квалифицированный персонал</b> с большим опытом работы
-                </div>
-              </div>
-              <div class="intro_item">
-                <div class="intro_item_logo">
-                  <img
-                    class="intro_item_logo_img"
-                    src="images/index/main_pipes.png"
-                    alt="Картинка материалов"
-                  />
-                </div>
-                <div class="intro_item_title">
-                  <b>Качественные материалы</b>, современное оборудование и
-                  технологии
-                </div>
-              </div>
-              <div class="intro_item">
-                <div class="intro_item_logo">
-                  <img
-                    class="intro_item_logo_img"
-                    src="images/index/main_quality.png"
-                    alt="Картикна качества"
-                  />
-                </div>
-                <div class="intro_item_title">
-                  <b>Оптимальное соотношение</b> цены и качества
-                </div>
-              </div>
             </div>
-            <a href="#about">
-              <button class="intro_btn">Подробнее</button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="about" id="about">
-        <div class="container">
-          <div class="about_title title">
-            <h1>О нас</h1>
-            <div class="title_line"></div>
-          </div>
-          <div class="about_text">
-            <p>
-              Наша компания была основана в 2015 году, но её руководитель начал
-              свою трудовую деятельность ещё в 2003 году в ЗАО
-              «Белтермоизоляция». Затем работал в нескольких компаниях г. Москвы
-              («АС-СТРОЙ» - производитель работ, «ТЕХ-АЛЬТЕРНАТИВА» -
-              руководитель проекта, «Антей-Инжиниринг» - технический директор).
-              Опыт, накопленный при работе с крупными иностранными и российскими
-              компаниями, привел к организации ООО «ТЕХ-АС ИЗОЛЯЦИЯ».
-              Сформировавшаяся ещё несколько лет назад команда специалистов
-              нашей компании выполнит работы качественно и точно в сроки.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="activity">
-        <div class="container">
-          <div class="activity_title title">
-            <h2>Основные направления нашей деятельности</h2>
-            <div class="title_line"></div>
-          </div>
-          <div class="activity_table">
-            <div class="activity_table_left">
-              <div class="activity_table_left_item">
-                <div class="activity_table_left_title">
-                  <h3>
-                    Устройство внутренних, наружных инженерных систем и
-                    оборудования зданий и сооружений
-                  </h3>
+            <div class="logos">
+                <div class="container">
+                    <div class="logos_title title">
+                        <h2>Наши объекты и партнёры</h2>
+                        <div class="title_line"></div>
+                    </div>
+                    <div class="logos_inner">
+                        <div class="logos_inner_item">
+                            <div class="logos_inner_item_logo">
+                                <img
+                                    class="logos_inner_item_logo_img"
+                                    src="images/index/EVN.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="logos_inner_item_info">
+                                <div class="logos_inner_item_info_title">
+                                    ООО «ЕФН-Экотехпром МСЗ 3»
+                                </div>
+                                <div class="logos_inner_item_info_text">
+                                    Австрийская компания, занимающаяся
+                                    комплексными решениями в области
+                                    использования энергетических ресурсов и
+                                    экологии.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logos_inner_item">
+                            <div class="logos_inner_item_logo">
+                                <img
+                                    class="logos_inner_item_logo_img"
+                                    src="images/index/MAREVEN.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="logos_inner_item_info">
+                                <div class="logos_inner_item_info_title">
+                                    "Маревен фуд сэнтрал, ООО, Серпухов"
+                                </div>
+                                <div class="logos_inner_item_info_text">
+                                    Один из крупнейших в СНГ производителей
+                                    продуктов быстрого приготовления.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logos_inner_item">
+                            <div class="logos_inner_item_logo">
+                                <img
+                                    class="logos_inner_item_logo_img"
+                                    src="images/index/GEA.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="logos_inner_item_info">
+                                <div class="logos_inner_item_info_title">
+                                    "ГЕА Рефрижерейшн РУС"
+                                </div>
+                                <div class="logos_inner_item_info_text">
+                                    Дочерняя компания концерна GEA Group,
+                                    предлагающая полный комплекс услуг на рынке
+                                    оборудования для энергетической и
+                                    нефтегазовой отраслей, включая теплоизоляцию
+                                    оборудования и трубопроводов.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logos_inner_item">
+                            <div class="logos_inner_item_logo">
+                                <img
+                                    class="logos_inner_item_logo_img"
+                                    src="images/index/KIILTO.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="logos_inner_item_info">
+                                <div class="logos_inner_item_info_title">
+                                    "KIILTO"
+                                </div>
+                                <div class="logos_inner_item_info_text">
+                                    Компания, занимающаяся разработкой и
+                                    производством строительных и
+                                    гидроизоляционных материалов для различных
+                                    областей промышленности и строительства, а
+                                    также термоизоляцией горелок и рукавных
+                                    фильтров.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="activity_table_left_items">
-                  <ul>
-                    <li>Систем теплоснабжения</li>
-                    <li>Систем электроснабжения</li>
-                    <li>Системы вентиляции и кондиционирования воздуха</li>
-                    <li>Система хладоснобжения</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="activity_table_left_item">
-                <div class="activity_table_left_title">
-                  <h3>
-                    Защита строительных конструкций, трубопроводов и
-                    оборудования
-                  </h3>
-                </div>
-                <div class="activity_table_left_items">
-                  <ul>
-                    <li>Устройство оклеечной изоляции</li>
-                    <li>Устройство металлизационных покрытий</li>
-                    <li>Защитное покрытие лакокрасочными материалами</li>
-                    <li>Работы по теплоизоляции трубопроводов, конструкций</li>
-                    <li>Работы по теплоизоляции зданий, оборудования</li>
-                  </ul>
-                </div>
-              </div>
             </div>
-            <div class="activity_table_right">
-              <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <img
-                    src="images/index/activity_1.jpg"
-                    style="width: 100%"
-                    alt="Картинка_1"
-                  />
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_inner_left">
+                        <h3 class="footer_inner_left_title">
+                            С уважением и готовностью к сотрудничеству компания
+                            <b>ООО «ТЕХ-АС ИЗОЛЯЦИЯ»</b>
+                        </h3>
+                    </div>
+                    <div class="footer_inner_right">
+                        <div class="footer_inner_right_director">
+                            <div class="footer_inner_right_director_title">
+                                <p>
+                                    Генеральный директор: Азаров Иван Иванович
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer_inner_right_phone">
+                            <p>Телефон: +7(919)223-25-62</p>
+                        </div>
+                        <div class="footer_inner_right_email">
+                            <p>E-mail: teh-asizol@yandex.ru</p>
+                            <p>
+                                Адрес: г. Шебекино, ул. Московская, д. №13, офис
+                                №14
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mySlides fade">
-                  <img
-                    src="images/index/activity_2.jpg"
-                    style="width: 100%"
-                    alt="Картинка_2"
-                  />
-                </div>
-                <div class="mySlides fade">
-                  <img
-                    src="images/index/activity_3.jpg"
-                    style="width: 100%"
-                    alt="Картинка_3"
-                  />
-                </div>
-                <div class="mySlides fade">
-                  <img
-                    src="images/index/activity_4.jpg"
-                    style="width: 100%"
-                    alt="Картинка_4"
-                  />
-                </div>
-                <div class="mySlides fade">
-                  <img
-                    src="images/index/activity_5.jpg"
-                    style="width: 100%"
-                    alt="Картинка_5"
-                  />
-                </div>
-                <div class="mySlides fade">
-                  <img
-                    src="images/index/activity_6.jpg"
-                    style="width: 100%"
-                    alt="Картинка_6"
-                  />
-                </div>
-                <div class="mySlides fade">
-                  <img
-                    src="images/index/activity_7.jpg"
-                    style="width: 100%"
-                    alt="Картинка_7"
-                  />
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">
-                  <img
-                    class="prev_img"
-                    src="images/index/prev.png"
-                    alt="Слайдер влево"
-                  />
-                </a>
-                <a class="next" onclick="plusSlides(1)">
-                  <img
-                    class="prev_img"
-                    src="images/index/next.png"
-                    alt="Слайдер вправо"
-                  />
-                </a>
-              </div>
-              <div>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="logos">
-        <div class="container">
-          <div class="logos_title title">
-            <h2>Наши объекты и партнёры</h2>
-            <div class="title_line"></div>
-          </div>
-          <div class="logos_inner">
-            <div class="logos_inner_item">
-              <div class="logos_inner_item_logo">
-                <img
-                  class="logos_inner_item_logo_img"
-                  src="images/index/EVN.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="logos_inner_item_info">
-                <div class="logos_inner_item_info_title">
-                  ООО «ЕФН-Экотехпром МСЗ 3»
-                </div>
-                <div class="logos_inner_item_info_text">
-                  Австрийская компания, занимающаяся комплексными решениями в
-                  области использования энергетических ресурсов и экологии.
-                </div>
-              </div>
-            </div>
-            <div class="logos_inner_item">
-              <div class="logos_inner_item_logo">
-                <img
-                  class="logos_inner_item_logo_img"
-                  src="images/index/MAREVEN.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="logos_inner_item_info">
-                <div class="logos_inner_item_info_title">
-                  "Маревен фуд сэнтрал, ООО, Серпухов"
-                </div>
-                <div class="logos_inner_item_info_text">
-                  Один из крупнейших в СНГ производителей продуктов быстрого
-                  приготовления.
-                </div>
-              </div>
-            </div>
-            <div class="logos_inner_item">
-              <div class="logos_inner_item_logo">
-                <img
-                  class="logos_inner_item_logo_img"
-                  src="images/index/GEA.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="logos_inner_item_info">
-                <div class="logos_inner_item_info_title">
-                  "ГЕА Рефрижерейшн РУС"
-                </div>
-                <div class="logos_inner_item_info_text">
-                  Дочерняя компания концерна GEA Group, предлагающая полный
-                  комплекс услуг на рынке оборудования для энергетической и
-                  нефтегазовой отраслей, включая теплоизоляцию оборудования и
-                  трубопроводов.
-                </div>
-              </div>
-            </div>
-            <div class="logos_inner_item">
-              <div class="logos_inner_item_logo">
-                <img
-                  class="logos_inner_item_logo_img"
-                  src="images/index/KIILTO.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="logos_inner_item_info">
-                <div class="logos_inner_item_info_title">"KIILTO"</div>
-                <div class="logos_inner_item_info_text">
-                  Компания, занимающаяся разработкой и производством
-                  строительных и гидроизоляционных материалов для различных
-                  областей промышленности и строительства, а также
-                  термоизоляцией горелок и рукавных фильтров.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer_inner">
-          <div class="footer_inner_left">
-            <h3 class="footer_inner_left_title">
-              С уважением и готовностью к сотрудничеству компания
-              <b>ООО «ТЕХ-АС ИЗОЛЯЦИЯ»</b>
-            </h3>
-          </div>
-          <div class="footer_inner_right">
-            <div class="footer_inner_right_director">
-              <div class="footer_inner_right_director_title">
-                <p>Генеральный директор: Азаров Иван Иванович</p>
-              </div>
-            </div>
-            <div class="footer_inner_right_phone">
-              <p>Телефон: +7(919)223-25-62</p>
-            </div>
-            <div class="footer_inner_right_email">
-              <p>E-mail: teh-asizol@yandex.ru</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="JS/main.js"></script>
-    <script src="JS/common.js"></script>
-  </body>
+        </footer>
+        <script src="JS/main.js"></script>
+        <script src="JS/common.js"></script>
+    </body>
 </html>
