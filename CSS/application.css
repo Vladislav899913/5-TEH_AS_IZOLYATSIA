@@ -37,21 +37,6 @@
     outline: none;
 }
 
-.form_body {
-}
-
-.form_body::after {
-}
-
-.form_body._sending::after {
-}
-
-/* .form_title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 30px;
-} */
-
 .form_item {
     margin-bottom: 15px;
 }
@@ -59,7 +44,6 @@
 .form_label {
     font-size: 18px;
     display: block;
-    /* margin: 0; */
 }
 
 .form_input {
@@ -85,9 +69,6 @@ textarea.form_input {
     resize: none;
     padding: 20px;
     text-align: start;
-}
-
-.checkbox {
 }
 
 .checkbox._error .checkbox_label::before {
@@ -164,13 +145,4 @@ textarea.form_input {
 .form_button:active {
     top: 3px;
     box-shadow: 0 2px 0 #161b13;
-}
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 425px) {
 }
