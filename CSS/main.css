@@ -651,6 +651,19 @@ dot:hover {
         line-height: 1.3;
     }
 
+    .activity_table {
+        display: block;
+    }
+
+    .activity_table_left {
+        width: 100%;
+    }
+
+    .activity_table_right {
+        margin-top: 50px;
+        width: 100%;
+    }
+
     /* LOGOS */
     .logos_inner_1line {
         margin-bottom: 25px;
@@ -709,19 +722,6 @@ dot:hover {
     }
 
     /* ACTIVITY */
-    .activity_table {
-        display: block;
-    }
-
-    .activity_table_left {
-        width: 100%;
-    }
-
-    .activity_table_right {
-        margin-top: 50px;
-        width: 100%;
-    }
-
     .slideshow-container {
         margin: 0 auto;
         margin-bottom: 10px;
