@@ -2,118 +2,114 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="ООО «ТЕХ-АС ИЗОЛЯЦИЯ» работает в области расчёта и монтажа различных систем трубопроводов, 
+        вентиляционных систем. Мы также выполняем расчёт и устройство термической изоляции трубопроводов, воздуховодов и оборудования 
+        для предприятий пищевой, пивоваренной, холодильной и других отраслей промышленности. А также для жилых и административных 
+        зданий и предприятий теплоэнергетического комплекса."
+        />
+        <meta
+            name="keywords"
+            content="изоляция, изоляция в Белгороде, монтаж, монтаж в Белгороде, изоляция в Белгородской области, монтаж в Белгородской области, теплоизоляция, изоляция труб"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ООО "ТАИ"</title>
-        <link rel="icon" href="images/index/main/icon.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <title>ООО "ТАИ" - Изоляция и монтаж</title>
+        <link rel="icon" href="images/main/common/icon.png" />
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="CSS/main.css" />
+        <link rel="stylesheet" href="styles/main.css" />
     </head>
     <body>
-        <header class="header js-header">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar_wrap">
-                        <div class="hamb" id="hamb">
-                            <div class="hamb_field" id="hamb">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </div>
-                        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <div class="nav_burger_icon" id="nav_burger_icon">
+                        <span class="icon_line"></span>
+                        <span class="icon_line"></span>
+                        <span class="icon_line"></span>
+                    </div>
+                    <div class="header_inner_reverse">
                         <a class="nav_logo" id="nav_logo" href="#intro">
                             <div class="nav_logo_block">
                                 <img
-                                    class="nav_logo_img"
-                                    src="images/index/main/logo.png"
-                                    alt="ЛОГОТИП"
+                                    src="images/main/header/logo.png"
+                                    alt="Логотип"
                                 />
                             </div>
-                            <div class="nav_logo_title">ТЕХ-АС «ИЗОЛЯЦИЯ»</div>
+                            <h6 class="nav_logo_title">ТЕХ-АС «ИЗОЛЯЦИЯ»</h6>
                         </a>
                         <div class="nav_info">
                             <p><b>Телефон</b>: +7(919)223-25-62</p>
                             <p><b>E-mail</b>: teh-asizol@yandex.ru</p>
                         </div>
-                        <ul class="nav_links" id="nav_links">
-                            <li>
-                                <a
-                                    class="nav_link_a nav_link-active"
-                                    href="index.html"
-                                >
-                                    <div class="nav_link">Главная</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav_link_a" href="services.html">
-                                    <div class="nav_link">Услуги</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav_link_a" href="application.html">
-                                    <div class="nav_link">Сотрудничество</div>
-                                </a>
-                            </li>
-                        </ul>
+                        <nav class="nav" id="nav">
+                            <a class="nav_link nav_link_active" href="#intro">
+                                Главная
+                            </a>
+                            <a class="nav_link" href="services.html">
+                                Услуги
+                            </a>
+                            <a class="nav_link" href="application.html">
+                                Сотрудничество
+                            </a>
+                        </nav>
                     </div>
                 </div>
-            </nav>
-            <div class="popup" id="popup"></div>
+            </div>
+            <div class="nav_burger" id="nav_burger"></div>
         </header>
         <main>
             <div class="intro" id="intro">
                 <div class="container">
                     <div class="intro_inner">
-                        <div class="intro_title">
-                            <h1>
-                                Устройство внутренних и наружных инженерных
-                                систем зданий и сооружений
-                            </h1>
-                        </div>
+                        <h1 class="intro_title">
+                            Устройство внутренних и наружных инженерных систем
+                            зданий и сооружений
+                        </h1>
                         <div class="intro_items">
                             <div class="intro_item">
-                                <div class="intro_item_logo">
+                                <div class="intro_item_icon">
                                     <img
-                                        class="intro_item_logo_img"
-                                        src="images/index/main/person.png"
+                                        draggable="false"
+                                        src="images/main/header/icon_1.png"
                                         alt="Картинка работника"
                                     />
                                 </div>
-                                <div class="intro_item_title">
+                                <h6 class="intro_item_title">
                                     <b>Квалифицированный персонал</b> с большим
                                     опытом работы
-                                </div>
+                                </h6>
                             </div>
                             <div class="intro_item">
-                                <div class="intro_item_logo">
+                                <div class="intro_item_icon">
                                     <img
-                                        class="intro_item_logo_img"
-                                        src="images/index/main/pipes.png"
+                                        draggable="false"
+                                        src="images/main/header/icon_2.png"
+                                        alt="Картинка качества"
+                                    />
+                                </div>
+                                <h6 class="intro_item_title">
+                                    <b>Оптимальное соотношение</b> цены и
+                                    качества
+                                </h6>
+                            </div>
+                            <div class="intro_item">
+                                <div class="intro_item_icon">
+                                    <img
+                                        draggable="false"
+                                        src="images/main/header/icon_3.png"
                                         alt="Картинка материалов"
                                     />
                                 </div>
-                                <div class="intro_item_title">
+                                <h6 class="intro_item_title">
                                     <b>Качественные материалы</b>, современное
                                     оборудование и технологии
-                                </div>
-                            </div>
-                            <div class="intro_item">
-                                <div class="intro_item_logo">
-                                    <img
-                                        class="intro_item_logo_img"
-                                        src="images/index/main/quality.png"
-                                        alt="Картикна качества"
-                                    />
-                                </div>
-                                <div class="intro_item_title">
-                                    <b>Оптимальное соотношение</b> цены и
-                                    качества
-                                </div>
+                                </h6>
                             </div>
                         </div>
                         <a href="#about">
@@ -124,153 +120,161 @@
             </div>
             <div class="about" id="about">
                 <div class="container">
-                    <div class="about_title title">
-                        <h1>О нас</h1>
-                        <div class="title_line"></div>
-                    </div>
-                    <div class="about_text">
-                        <p>
-                            Наша компания была основана в 2015 году, но её
-                            руководитель начал свою трудовую деятельность ещё в
-                            2003 году в ЗАО «Белтермоизоляция». Затем работал в
-                            нескольких компаниях г. Москвы («АС-СТРОЙ» -
-                            производитель работ, «ТЕХ-АЛЬТЕРНАТИВА» -
-                            руководитель проекта, «Антей-Инжиниринг» -
-                            технический директор). Опыт, накопленный при работе
-                            с крупными иностранными и российскими компаниями,
-                            привел к организации ООО «ТЕХ-АС ИЗОЛЯЦИЯ».
-                            Сформировавшаяся ещё несколько лет назад команда
-                            специалистов нашей компании выполнит работы
-                            качественно и точно в сроки.
-                        </p>
-                    </div>
+                    <h2 class="title">О нас</h2>
+                    <p class="text">
+                        Наша компания была основана в 2015 году, но её
+                        руководитель начал свою трудовую деятельность ещё в 2003
+                        году в ЗАО «Белтермоизоляция». Затем работал в
+                        нескольких компаниях г. Москвы («АС-СТРОЙ» -
+                        производитель работ, «ТЕХ-АЛЬТЕРНАТИВА» - руководитель
+                        проекта, «Антей-Инжиниринг» - технический директор).
+                        Опыт, накопленный при работе с крупными иностранными и
+                        российскими компаниями, привел к организации ООО «ТЕХ-АС
+                        ИЗОЛЯЦИЯ». Сформировавшаяся ещё несколько лет назад
+                        команда специалистов нашей компании выполнит работы
+                        качественно и точно в сроки.
+                    </p>
                 </div>
             </div>
             <div class="activity">
                 <div class="container">
-                    <div class="activity_title title">
-                        <h2>Основные направления нашей деятельности</h2>
-                        <div class="title_line"></div>
-                    </div>
-                    <div class="activity_table">
-                        <div class="activity_table_left">
-                            <div class="activity_table_left_item">
-                                <div class="activity_table_left_title">
-                                    <h3>
-                                        Устройство внутренних, наружных
-                                        инженерных систем и оборудования зданий
-                                        и сооружений
-                                    </h3>
-                                </div>
-                                <div class="activity_table_left_items">
-                                    <ul>
-                                        <li>Систем теплоснабжения</li>
-                                        <li>Системы вентиляции и кондиционирования воздуха</li>
-                                        <li>Система хладоснобжения</li>
-                                    </ul>
-                                </div>
+                    <h2 class="title">
+                        Основные направления нашей деятельности
+                    </h2>
+                    <div class="activity_inner">
+                        <div class="activity_inner_left">
+                            <div class="activity_left_item">
+                                <h3 class="activity_item_title">
+                                    Устройство внутренних, наружных инженерных
+                                    систем и оборудования зданий и сооружений
+                                </h3>
+                                <ul class="activity_item_text">
+                                    <li>Систем теплоснабжения</li>
+                                    <li>
+                                        Системы вентиляции и кондиционирования
+                                        воздуха
+                                    </li>
+                                    <li>Система хладоснобжения</li>
+                                </ul>
                             </div>
-                            <div class="activity_table_left_item">
-                                <div class="activity_table_left_title">
-                                    <h3>
-                                        Защита строительных конструкций,
-                                        трубопроводов и оборудования
-                                    </h3>
-                                </div>
-                                <div class="activity_table_left_items">
-                                    <ul>
-                                        <li>Устройство оклеечной изоляции</li>
-                                        <li>Устройство металлизационных покрытий</li>
-                                        <li>Защитное покрытие лакокрасочными материалами</li>
-                                        <li>Работы по теплоизоляции трубопроводов, конструкций</li>
-                                        <li>Работы по теплоизоляции зданий, оборудования</li>
-                                    </ul>
-                                </div>
+                            <div class="activity_left_item">
+                                <h3 class="activity_item_title">
+                                    Защита строительных конструкций,
+                                    трубопроводов и оборудования
+                                </h3>
+                                <ul class="activity_item_text">
+                                    <li>Устройство оклеечной изоляции</li>
+                                    <li>
+                                        Устройство металлизационных покрытий
+                                    </li>
+                                    <li>
+                                        Защитное покрытие лакокрасочными
+                                        материалами
+                                    </li>
+                                    <li>
+                                        Работы по теплоизоляции трубопроводов,
+                                        конструкций
+                                    </li>
+                                    <li>
+                                        Работы по теплоизоляции зданий,
+                                        оборудования
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="activity_table_right">
-                            <div class="slideshow-container">
-                                <div class="mySlides fade">
+                        <div class="activity_inner_right">
+                            <div class="activity_right_slider">
+                                <div
+                                    class="activity_slider_slides activity_slider_fade"
+                                >
                                     <img
-                                        class="mySlides_img"
-                                        src="images/index/activities/activity_1.jpg"
+                                        src="images/main/activities/photo_1.jpg"
                                         alt="Фото_1"
                                     />
                                 </div>
-                                <div class="mySlides fade">
+                                <div
+                                    class="activity_slider_slides activity_slider_fade"
+                                >
                                     <img
-                                        class="mySlides_img"
-                                        src="images/index/activities/activity_2.jpg"
+                                        src="images/main/activities/photo_2.jpg"
                                         alt="Фото_2"
                                     />
                                 </div>
-                                <div class="mySlides fade">
+                                <div
+                                    class="activity_slider_slides activity_slider_fade"
+                                >
                                     <img
-                                        class="mySlides_img"
-                                        src="images/index/activities/activity_3.jpg"
+                                        src="images/main/activities/photo_3.jpg"
                                         alt="Фото_3"
                                     />
                                 </div>
-                                <div class="mySlides fade">
+                                <div
+                                    class="activity_slider_slides activity_slider_fade"
+                                >
                                     <img
-                                        class="mySlides_img"
-                                        src="images/index/activities/activity_4.jpg"
+                                        src="images/main/activities/photo_4.jpg"
                                         alt="Фото_4"
                                     />
                                 </div>
-                                <div class="mySlides fade">
+                                <div
+                                    class="activity_slider_slides activity_slider_fade"
+                                >
                                     <img
-                                        class="mySlides_img"
-                                        src="images/index/activities/activity_5.jpg"
+                                        src="images/main/activities/photo_5.jpg"
                                         alt="Фото_5"
                                     />
                                 </div>
-                                <div class="mySlides fade">
+                                <div
+                                    class="activity_slider_slides activity_slider_fade"
+                                >
                                     <img
-                                        class="mySlides_img"
-                                        src="images/index/activities/activity_6.jpg"
+                                        src="images/main/activities/photo_6.jpg"
                                         alt="Фото_6"
                                     />
                                 </div>
-                                <a class="prev" onclick="plusSlides(-1)">
+                                <a
+                                    class="activity_slider_previous"
+                                    onclick="plusSlides(-1)"
+                                >
                                     <img
-                                        class="prev_img"
-                                        src="images/index/activities/prev.png"
+                                        src="images/main/activities/icon_previous.png"
                                         alt="Слайдер влево"
                                     />
                                 </a>
-                                <a class="next" onclick="plusSlides(1)">
+                                <a
+                                    class="activity_slider_next"
+                                    onclick="plusSlides(1)"
+                                >
                                     <img
-                                        class="prev_img"
-                                        src="images/index/activities/next.png"
+                                        src="images/main/activities/icon_next.png"
                                         alt="Слайдер вправо"
                                     />
                                 </a>
                             </div>
                             <div>
-                                <div class="dot_bg">
+                                <div class="activity_slider_dots">
                                     <span
-                                        class="dot"
+                                        class="activity_slider_dot"
                                         onclick="currentSlide(1)"
                                     ></span>
                                     <span
-                                        class="dot"
+                                        class="activity_slider_dot"
                                         onclick="currentSlide(2)"
                                     ></span>
                                     <span
-                                        class="dot"
+                                        class="activity_slider_dot"
                                         onclick="currentSlide(3)"
                                     ></span>
                                     <span
-                                        class="dot"
+                                        class="activity_slider_dot"
                                         onclick="currentSlide(4)"
                                     ></span>
                                     <span
-                                        class="dot"
+                                        class="activity_slider_dot"
                                         onclick="currentSlide(5)"
                                     ></span>
                                     <span
-                                        class="dot"
+                                        class="activity_slider_dot"
                                         onclick="currentSlide(6)"
                                     ></span>
                                 </div>
@@ -281,44 +285,36 @@
             </div>
             <div class="logos">
                 <div class="container">
-                    <div class="logos_title title">
-                        <h2>Наши объекты и партнёры</h2>
-                        <div class="title_line"></div>
-                    </div>
+                    <h2 class="title">Наши объекты и партнёры</h2>
                     <div class="logos_inner">
                         <div class="logos_inner_1line">
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/evn.jpg"
+                                    src="images/main/logos/logo_evn.jpg"
                                     alt="Логотип «EVN»"
                                 />
                             </div>
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/mareven.jpg"
+                                    src="images/main/logos/logo_mareven.jpg"
                                     alt="Логотип «MAREVEN»"
                                 />
                             </div>
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/gea.jpg"
+                                    src="images/main/logos/logo_gea.jpg"
                                     alt="Логотип «GEA»"
                                 />
                             </div>
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/kiilto.jpg"
+                                    src="images/main/logos/logo_kiilto.jpg"
                                     alt="Логотип «KIILTO»"
                                 />
                             </div>
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/interxolod.png"
+                                    src="images/main/logos/logo_interxolod.png"
                                     alt="Логотип «INTERXOLOD»"
                                 />
                             </div>
@@ -326,29 +322,25 @@
                         <div class="logos_inner_2line">
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/miratorg.jpg"
+                                    src="images/main/logos/logo_miratorg.jpg"
                                     alt="Логотип «МИРАТОРГ»"
                                 />
                             </div>
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/technomir.png"
+                                    src="images/main/logos/logo_technomir.png"
                                     alt="Логотип «ТЕХНОМИР»"
                                 />
                             </div>
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/termokul.png"
+                                    src="images/main/logos/logo_termokul.png"
                                     alt="Логотип «ТЕРМОКУЛ»"
                                 />
                             </div>
                             <div class="logos_inner_item">
                                 <img
-                                    class="logos_inner_item_img"
-                                    src="images/index/logos/roskosmos.png"
+                                    src="images/main/logos/logo_roskosmos.png"
                                     alt="Логотип «РОСКОСМОС»"
                                 />
                             </div>
@@ -360,24 +352,23 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer_inner">
-                    <div class="footer_inner_left">
-                        <h3 class="footer_inner_left_title">
-                            С уважением и готовностью к сотрудничеству компания
-                            <b>ООО «ТЕХ-АС ИЗОЛЯЦИЯ»</b>
-                        </h3>
-                    </div>
+                    <p class="footer_inner_left">
+                        С уважением и готовностью к сотрудничеству компания
+                        <b>ООО «ТЕХ-АС ИЗОЛЯЦИЯ»</b>
+                    </p>
                     <div class="footer_inner_right">
                         <p><b>Генеральный директор</b>: Азаров Иван Иванович</p>
                         <p><b>Телефон</b>: +7(919)223-25-62</p>
                         <p><b>E-mail</b>: teh-asizol@yandex.ru</p>
-                        <p><b>Адрес</b>: г. Шебекино, ул. Московская, д. №13,
+                        <p>
+                            <b>Адрес</b>: г. Шебекино, ул. Московская, д. №13,
                             офис №14
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="JS/main.js"></script>
-        <script src="JS/common.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/common.js"></script>
     </body>
 </html>

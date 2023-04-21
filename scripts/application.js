@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function Form() {
         e.preventDefault();
 
         let error = formValidate(form);
-
         let formData = new FormData(form);
 
         if (error === 0) {
@@ -19,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function Form() {
             });
             if (response.ok) {
                 let result = await response.json();
-                alert(result.comment);
+                alert(result.message);
                 form.reset();
                 applicationBody.classList.remove('_sending');
             } else {
                 alert(
-                    'Произошла ошибка при отправке заявки. Попробуйте снова.'
+                    'Произошла ошибка при отправке заявки! Попробуйте снова!'
                 );
                 applicationBody.classList.remove('_sending');
             }
@@ -35,12 +34,15 @@ document.addEventListener('DOMContentLoaded', function Form() {
 
     function formValidate(form) {
         let error = 0;
-        let formReq = document.querySelectorAll('._req');
+        let formRequired = document.querySelectorAll('._required');
 
-        for (let index = 0; index < formReq.length; index++) {
-            const input = formReq[index];
+        for (let index = 0; index < formRequired.length; index++) {
+            const input = formRequired[index];
             formRemoveError(input);
-            if (input.classList.contains('_phone')) {
+            if (input.value === '') {
+                formAddError(input);
+                error++;
+            } else if (input.classList.contains('_phone')) {
                 if (phoneTest(input)) {
                     formAddError(input);
                     error++;
@@ -54,9 +56,6 @@ document.addEventListener('DOMContentLoaded', function Form() {
                 input.getAttribute('type') === 'checkbox' &&
                 input.checked === false
             ) {
-                formAddError(input);
-                error++;
-            } else if (input.value === '') {
                 formAddError(input);
                 error++;
             }

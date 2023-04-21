@@ -2,181 +2,167 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ООО "ТАИ"</title>
-        <link rel="icon" href="images/index/main/icon.png">
+        <link rel="icon" href="images/index/main/icon.png" />
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="CSS/main.css" />
-        <link rel="stylesheet" href="CSS/application.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/application.css" />
     </head>
     <body class="application_body" id="application_body">
-        <header class="header js-header">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar_wrap">
-                        <div class="hamb" id="hamb">
-                            <div class="hamb_field" id="hamb">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </div>
-                        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <div class="nav_burger_icon" id="nav_burger_icon">
+                        <span class="icon_line"></span>
+                        <span class="icon_line"></span>
+                        <span class="icon_line"></span>
+                    </div>
+                    <div class="header_inner_reverse">
                         <a class="nav_logo" id="nav_logo" href="index.html">
                             <div class="nav_logo_block">
                                 <img
-                                    class="nav_logo_img"
-                                    src="images/index/main/logo.png"
-                                    alt="ЛОГОТИП"
+                                    src="images/main/header/logo.png"
+                                    alt="Логотип"
                                 />
                             </div>
-                            <div class="nav_logo_title">ТЕХ-АС «ИЗОЛЯЦИЯ»</div>
+                            <h6 class="nav_logo_title">ТЕХ-АС «ИЗОЛЯЦИЯ»</h6>
                         </a>
                         <div class="nav_info">
                             <p><b>Телефон</b>: +7(919)223-25-62</p>
                             <p><b>E-mail</b>: teh-asizol@yandex.ru</p>
                         </div>
-                        <ul class="nav_links" id="nav_links">
-                            <li>
-                                <a class="nav_link_a" href="index.html">
-                                    <div class="nav_link">Главная</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav_link_a" href="services.html">
-                                    <div class="nav_link">Услуги</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    class="nav_link_a nav_link-active"
-                                    href="application.html"
-                                >
-                                    <div class="nav_link">Сотрудничество</div>
-                                </a>
-                            </li>
-                        </ul>
+                        <nav class="nav" id="nav">
+                            <a class="nav_link" href="index.html">Главная</a>
+                            <a class="nav_link" href="services.html">
+                                Услуги
+                            </a>
+                            <a class="nav_link nav_link_active" href="#intro">
+                                Сотрудничество
+                            </a>
+                        </nav>
                     </div>
                 </div>
-            </nav>
-            <div class="popup" id="popup"></div>
+            </div>
+            <div class="nav_burger" id="nav_burger"></div>
         </header>
         <main>
-            <div class="intro">
+            <div class="intro" id="intro">
                 <div class="container">
-                    <div class="intro_title application-title">
-                        <h1>Оставьте заявку</h1>
-                        <div class="title_line"></div>
-                    </div>
-                    <div class="form">
-                        <form action="#" id="form" class="form_body">
-                            <div class="form_item">
-                                <label for="formFIO" class="form_label"
-                                    >ФИО*</label
-                                >
-                                <input
-                                    id="formFIO"
-                                    type="text"
-                                    name="FIO"
-                                    maxlength="60"
-                                    class="form_input _req"
-                                    placeholder="Иванов Иван Иванович"
-                                />
-                            </div>
-                            <div class="form_item">
-                                <label for="formPhone" class="form_label"
-                                    >Телефон*</label
-                                >
-                                <input
-                                    id="formPhone"
-                                    type="text"
-                                    name="phone"
-                                    maxlength="12"
-                                    class="form_input _req _phone"
-                                    placeholder="+70000000000"
-                                />
-                            </div>
-                            <div class="form_item">
-                                <label for="formEmail" class="form_label"
-                                    >E-mail*</label
-                                >
-                                <input
-                                    id="formEmail"
-                                    type="text"
-                                    name="email"
-                                    maxlength="30"
-                                    class="form_input _req _email"
-                                    placeholder="Адрес электронной почты"
-                                />
-                            </div>
-                            <div class="form_item">
-                                <label for="formVacancy" class="form_label"
-                                    >Должность</label
-                                >
-                                <select
-                                    name="vacancy"
-                                    id="formVacancy"
-                                    class="form_input"
-                                    placeholder="Выберите должность"
-                                >
-                                    <option
-                                        value="Без должности"
-                                        selected="selected"
+                    <div class="intro_inner">
+                        <h1 class="intro_title">Оставьте заявку</h1>
+                        <div class="form">
+                            <form action="#" class="form_body" id="form">
+                                <div class="form_item">
+                                    <label for="formFIO" class="form_label"
+                                        >ФИО*</label
                                     >
-                                        Без должности
-                                    </option>
-                                    <option value="Изолировщик">
-                                        Изолировщик
-                                    </option>
-                                    <option value="Инженер">Инженер</option>
-                                    <option value="Монтажник">Монтажник</option>
-                                </select>
-                            </div>
-                            <div class="form_item">
-                                <label for="formComment" class="form_label"
-                                    >Комментарий:</label
-                                >
-                                <textarea
-                                    id="formComment"
-                                    name="comment"
-                                    maxlength="1000"
-                                    class="form_input"
-                                    placeholder="Введите комментарий..."
-                                ></textarea>
-                            </div>
-                            <div class="form_item">
-                                <div class="checkbox">
                                     <input
-                                        id="formAgreement"
-                                        checked
-                                        type="checkbox"
-                                        name="agreement"
-                                        class="checkbox_input _req"
+                                        id="formFIO"
+                                        type="text"
+                                        name="FIO"
+                                        maxlength="60"
+                                        class="form_input _required"
+                                        placeholder="Иванов Иван Иванович"
                                     />
-                                    <label
-                                        for="formAgreement"
-                                        class="checkbox_label"
-                                    >
-                                        <span
-                                            >Я проинформирован(-а), что
-                                            персональные данные оставляются для
-                                            трудоустройства или
-                                            сотрудничества*</span
-                                        >
-                                    </label>
                                 </div>
-                            </div>
-                            <button
-                                type="submit"
-                                class="form_button"
-                                onclick="Form()"
-                            >
-                                Отправить
-                            </button>
-                        </form>
+                                <div class="form_item">
+                                    <label for="formPhone" class="form_label"
+                                        >Телефон*</label
+                                    >
+                                    <input
+                                        id="formPhone"
+                                        type="text"
+                                        name="phone"
+                                        maxlength="12"
+                                        class="form_input _required _phone"
+                                        placeholder="+70000000000"
+                                    />
+                                </div>
+                                <div class="form_item">
+                                    <label for="formEmail" class="form_label"
+                                        >E-mail*</label
+                                    >
+                                    <input
+                                        id="formEmail"
+                                        type="text"
+                                        name="email"
+                                        maxlength="30"
+                                        class="form_input _required _email"
+                                        placeholder="Адрес электронной почты"
+                                    />
+                                </div>
+                                <div class="form_item">
+                                    <label for="formVacancy" class="form_label"
+                                        >Должность</label
+                                    >
+                                    <select
+                                        name="vacancy"
+                                        id="formVacancy"
+                                        class="form_input"
+                                        placeholder="Выберите должность"
+                                    >
+                                        <option
+                                            value="Без должности"
+                                            selected="selected"
+                                        >
+                                            Без должности
+                                        </option>
+                                        <option value="Изолировщик">
+                                            Изолировщик
+                                        </option>
+                                        <option value="Инженер">Инженер</option>
+                                        <option value="Монтажник">
+                                            Монтажник
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="form_item">
+                                    <label for="formComment" class="form_label"
+                                        >Комментарий:</label
+                                    >
+                                    <textarea
+                                        id="formComment"
+                                        name="comment"
+                                        maxlength="1000"
+                                        class="form_input"
+                                        placeholder="Введите комментарий..."
+                                    ></textarea>
+                                </div>
+                                <div class="form_item">
+                                    <div class="checkbox">
+                                        <input
+                                            id="formAgreement"
+                                            checked
+                                            type="checkbox"
+                                            name="agreement"
+                                            class="checkbox_input _required"
+                                        />
+                                        <label
+                                            for="formAgreement"
+                                            class="checkbox_label"
+                                        >
+                                            <span
+                                                >Я проинформирован(-а), что
+                                                персональные данные оставляются
+                                                для трудоустройства или
+                                                сотрудничества*</span
+                                            >
+                                        </label>
+                                    </div>
+                                </div>
+                                <button
+                                    type="submit"
+                                    class="form_button"
+                                    onclick="Form()"
+                                >
+                                    Отправить
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,22 +170,23 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer_inner">
-                    <div class="footer_inner_left">
-                        <h3 class="footer_inner_left_title">
-                            С уважением и готовностью к сотрудничеству компания
-                            <b>ООО «ТЕХ-АС ИЗОЛЯЦИЯ»</b>
-                        </h3>
-                    </div>
+                    <p class="footer_inner_left">
+                        С уважением и готовностью к сотрудничеству компания
+                        <b>ООО «ТЕХ-АС ИЗОЛЯЦИЯ»</b>
+                    </p>
                     <div class="footer_inner_right">
                         <p><b>Генеральный директор</b>: Азаров Иван Иванович</p>
                         <p><b>Телефон</b>: +7(919)223-25-62</p>
                         <p><b>E-mail</b>: teh-asizol@yandex.ru</p>
-                        <p><b>Адрес</b>: г. Шебекино, ул. Московская, д. №13, офис №14</p>
+                        <p>
+                            <b>Адрес</b>: г. Шебекино, ул. Московская, д. №13,
+                            офис №14
+                        </p>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="JS/common.js"></script>
-        <script src="JS/application.js"></script>
+        <script src="scripts/common.js"></script>
+        <script src="scripts/application.js"></script>
     </body>
 </html>
