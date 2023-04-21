@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', function Slider() {
 
     // HIDE BURGER-MENU ON SCROLL
     var previousScrollPosition = window.pageYOffset;
+
     window.onscroll = function () {
         var currentScrollPosition = window.pageYOffset;
+
         if (
             previousScrollPosition > currentScrollPosition ||
             previousScrollPosition < currentScrollPosition

@@ -514,7 +514,6 @@ body {
         transition: 0.5s;
         border-right: 1px solid #fff;
         text-align: center;
-        /* pointer-events: none; */
     }
 
     .nav_burger.open {
